@@ -25,10 +25,12 @@ public class MainActivity extends AppCompatActivity {
             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
             dateTimeFormatter.format(time);
 
-            listdata.add(new ListData(1,"Xpander Cross","Premium At\n290juta","Rockford",time,true));
-            listdata.add(new ListData(2,"Xpander Cross","Premium At\n290juta","Rockford\nfosgate\n300 juta",time,true));
+            listdata.add(new ListData(1,"Xpander Cross","Premium At\n290juta","Rockford",LocalDateTime.now(),false));
+            listdata.add(new ListData(2,"Xpander Cross","Premium At\n290juta","Rockford\nfosgate\n300 juta",LocalDateTime.now(),false));
 
         }
+
+
 
 
         rV_data.setHasFixedSize(true);
@@ -38,4 +40,6 @@ public class MainActivity extends AppCompatActivity {
         rV_data.setAdapter(mainAdapter);
 
     }
+
+
 }
